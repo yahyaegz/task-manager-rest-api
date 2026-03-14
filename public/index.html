@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Tracker | DeepMind</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Student Task Tracker</h1>
+            <p>Master your academics, one task at a time.</p>
+        </header>
+
+        <section class="add-task">
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="What needs to be done?" required autocomplete="off">
+                <button type="submit" id="add-btn">Add Task</button>
+            </form>
+        </section>
+
+        <section class="task-list-container">
+            <div class="stats">
+                <span id="task-count">0 tasks left</span>
+                <button id="clear-completed" class="text-btn">Clear Completed</button>
+            </div>
+            <ul id="task-list">
+                <!-- Tasks will be injected here -->
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>Built with &hearts; for Students</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
